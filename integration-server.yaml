@@ -71,7 +71,7 @@ metadata:
       subresource: status
       time: '2023-01-12T11:25:11Z'
   name: argocd-test
-  namespace: cpm-case4
+  namespace: ace-gitops
   resourceVersion: '124018712'
   uid: acb8c124-2172-445a-826a-ce725cac38a3
 spec:
