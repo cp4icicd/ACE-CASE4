@@ -1,0 +1,219 @@
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
+metadata:
+  creationTimestamp: '2023-01-12T11:25:03Z'
+  generation: 1
+  managedFields:
+    - apiVersion: appconnect.ibm.com/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:spec':
+          'f:service':
+            .: {}
+            'f:endpointType': {}
+          'f:designerFlowsOperationMode': {}
+          'f:version': {}
+          'f:createDashboardUsers': {}
+          'f:enableMetrics': {}
+          'f:license':
+            .: {}
+            'f:accept': {}
+            'f:license': {}
+            'f:use': {}
+          .: {}
+          'f:replicas': {}
+          'f:pod':
+            .: {}
+            'f:containers':
+              .: {}
+              'f:runtime':
+                .: {}
+                'f:resources':
+                  .: {}
+                  'f:limits':
+                    .: {}
+                    'f:cpu': {}
+                    'f:memory': {}
+                  'f:requests':
+                    .: {}
+                    'f:cpu': {}
+                    'f:memory': {}
+          'f:adminServerSecure': {}
+          'f:router':
+            .: {}
+            'f:timeout': {}
+      manager: Mozilla
+      operation: Update
+      time: '2023-01-12T11:25:03Z'
+    - apiVersion: appconnect.ibm.com/v1beta1
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:status':
+          'f:phase': {}
+          'f:endpoints': {}
+          'f:supportsTraceCustomResource': {}
+          'f:conditions': {}
+          .: {}
+          'f:versions':
+            .: {}
+            'f:available':
+              .: {}
+              'f:channels': {}
+              'f:versions': {}
+            'f:reconciled': {}
+          'f:replicas': {}
+          'f:traceEnabled': {}
+          'f:availableReplicas': {}
+          'f:customImages': {}
+          'f:labelSelector': {}
+      manager: manager
+      operation: Update
+      subresource: status
+      time: '2023-01-12T11:25:11Z'
+  name: argocd-test
+  namespace: cpm-case4
+  resourceVersion: '124018712'
+  uid: acb8c124-2172-445a-826a-ce725cac38a3
+spec:
+  enableMetrics: true
+  license:
+    accept: true
+    license: L-APEH-CJUCNR
+    use: AppConnectEnterpriseNonProductionFREE
+  pod:
+    containers:
+      runtime:
+        resources:
+          limits:
+            cpu: 300m
+            memory: 368Mi
+          requests:
+            cpu: 300m
+            memory: 368Mi
+  adminServerSecure: true
+  router:
+    timeout: 120s
+  designerFlowsOperationMode: disabled
+  createDashboardUsers: true
+  service:
+    endpointType: http
+  version: '12.0'
+  replicas: 1
+status:
+  supportsTraceCustomResource: true
+  availableReplicas: 1
+  customImages: false
+  labelSelector: release=argocd-test
+  conditions:
+    - lastTransitionTime: '2023-01-12T11:41:54Z'
+      message: integrationserver is ready
+      reason: Deployed
+      status: 'True'
+      type: Ready
+  phase: Ready
+  versions:
+    available:
+      channels:
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.7.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CJUCNR)
+              matchesCurrentType: true
+              name: L-APEH-CJUCNR
+          name: '12.0'
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.7.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CJUCNR)
+              matchesCurrentType: true
+              name: L-APEH-CJUCNR
+          name: 12.0.7
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.6.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CFZE47)
+              matchesCurrentType: true
+              name: L-APEH-CFZE47
+          name: 12.0-lts
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.6.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CFZE47)
+              matchesCurrentType: true
+              name: L-APEH-CFZE47
+          name: 12.0.6-lts
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.6.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CFZE47)
+              matchesCurrentType: true
+              name: L-APEH-CFZE47
+          name: 12.0.6
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.5.0 - Sept 2022
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CCHL5W)
+              matchesCurrentType: true
+              name: L-KSBM-CJ2KWU
+          name: 12.0.5
+      versions:
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.7.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CJUCNR)
+              matchesCurrentType: true
+              name: L-APEH-CJUCNR
+          name: 12.0.7.0-r2
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.7.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CJUCNR)
+              matchesCurrentType: true
+              name: L-APEH-CJUCNR
+          name: 12.0.7.0-r1
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.6.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CFZE47)
+              matchesCurrentType: true
+              name: L-APEH-CFZE47
+          name: 12.0.6.0-r2-lts
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.6.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CFZE47)
+              matchesCurrentType: true
+              name: L-APEH-CFZE47
+          name: 12.0.6.0-r1
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.5.0 - Sept 2022
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CCHL5W)
+              matchesCurrentType: true
+              name: L-KSBM-CJ2KWU
+          name: 12.0.5.0-r4
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.5.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CCHL5W)
+              matchesCurrentType: true
+              name: L-APEH-CCHL5W
+          name: 12.0.5.0-r3
+        - licenses:
+            - displayName: IBM App Connect Enterprise 12.0.5.0
+              link: >-
+                https://www-03.ibm.com/software/sla/sladb.nsf/searchlis/?searchview&searchorder=4&searchmax=0&query=(L-APEH-CCHL5W)
+              matchesCurrentType: true
+              name: L-APEH-CCHL5W
+          name: 12.0.5.0-r2
+    reconciled: 12.0.7.0-r2
+  replicas: 1
+  traceEnabled: {}
+  endpoints:
+    - name: http endpoint
+      type: api
+      uri: 'http://argocd-test-http-cpm-case4.apps.ajhcpm.cp.fyre.ibm.com'
+    - name: https endpoint
+      type: api
+      uri: 'https://argocd-test-https-cpm-case4.apps.ajhcpm.cp.fyre.ibm.com'
+
